@@ -28,7 +28,11 @@ claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install elevenl
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install n8n-mcp-skills@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `n8n-mcp-skills` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `n8n-mcp-skills` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install n8n-mcp-skills@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Creada por [Romuald Członkowski (czlonkowski)](https://github.com/czlonkowski/n8n-skills) · licencia MIT · se instala desde el repo de su autor, así te llegan sus mejoras
 
@@ -42,7 +46,11 @@ Las 8 skills oficiales de GSAP: tweens, timelines, ScrollTrigger, plugins, React
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install gsap-skills@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `gsap-skills` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `gsap-skills` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install gsap-skills@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Creada por [GreenSock (oficiales)](https://github.com/greensock/gsap-skills) · licencia MIT · se instala desde el repo de su autor, así te llegan sus mejoras
 
@@ -54,7 +62,11 @@ Diseña, critica, audita y pule interfaces (web, dashboards, móvil): jerarquía
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install impeccable@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `impeccable` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `impeccable` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install impeccable@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Creada por [Paul Bakaus](https://github.com/pbakaus/impeccable) · licencia Apache-2.0 · se instala desde el repo de su autor, así te llegan sus mejoras
 
@@ -66,7 +78,11 @@ Datos buscables de UI/UX: estilos, paletas, tipografías, patrones y reglas por 
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install ui-ux-pro-max@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `ui-ux-pro-max` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `ui-ux-pro-max` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install ui-ux-pro-max@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Creada por [Next Level Builder](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) · licencia MIT · se instala desde el repo de su autor, así te llegan sus mejoras
 
@@ -78,7 +94,11 @@ Dirección de arte para landings y sitios públicos que no se vean hechos por IA
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install design-taste-frontend@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `design-taste-frontend` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `design-taste-frontend` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install design-taste-frontend@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Creada por [Leonxlnx (tasteskill)](https://github.com/Leonxlnx/taste-skill) · licencia MIT · se instala desde el repo de su autor, así te llegan sus mejoras
 
@@ -90,7 +110,11 @@ Revisa el código de una interfaz contra las Web Interface Guidelines de Vercel:
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install web-design-guidelines@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `web-design-guidelines` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `web-design-guidelines` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install web-design-guidelines@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Creada por [Vercel](https://github.com/vercel-labs/agent-skills) · licencia MIT · se instala desde el repo de su autor, así te llegan sus mejoras
 
@@ -102,7 +126,11 @@ Guía para construir componentes de interfaz accesibles y componibles: APIs, des
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install building-components@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `building-components` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `building-components` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install building-components@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Creada por [Vercel (components.build)](https://github.com/vercel/components.build) · licencia Apache-2.0 · se instala desde el repo de su autor, así te llegan sus mejoras
 
@@ -114,7 +142,11 @@ Referencia de shadcn/ui para React y Tailwind: componentes accesibles que se cop
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install shadcn-ui@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `shadcn-ui` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `shadcn-ui` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install shadcn-ui@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Creada por [bobmatnyc (Claude MPM)](https://github.com/bobmatnyc/claude-mpm-skills) · licencia MIT · se instala desde el repo de su autor, así te llegan sus mejoras
 
@@ -128,7 +160,11 @@ Investiga en la web en varias pasadas y desde varios ángulos antes de escribir,
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install deep-research@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `deep-research` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `deep-research` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install deep-research@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Creada por [ByteDance (DeerFlow)](https://github.com/bytedance/deer-flow) · licencia MIT · se instala desde el repo de su autor, así te llegan sus mejoras
 
@@ -142,7 +178,11 @@ Audita el SEO técnico y on-page de un sitio: indexación, meta tags, Core Web V
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install seo-audit@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `seo-audit` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `seo-audit` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install seo-audit@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Creada por [Corey Haines](https://github.com/coreyhaines31/marketingskills) · licencia MIT · se instala desde el repo de su autor, así te llegan sus mejoras
 
@@ -156,7 +196,11 @@ Voz con IA en ElevenLabs que suena humana: qué modelo, voz y ajustes usar en es
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install elevenlabs-expert@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `elevenlabs-expert` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `elevenlabs-expert` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install elevenlabs-expert@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Versión 1.1.0 · [Bajar ZIP para claude.ai](https://github.com/DevAI-MX/nbl-skills/raw/main/descargas/elevenlabs-expert.zip)
 
@@ -168,7 +212,11 @@ Imagen y video con IA en Higgsfield: qué modelo elegir, cómo escribir el promp
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install higgsfield-expert@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `higgsfield-expert` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `higgsfield-expert` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install higgsfield-expert@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Versión 2.0.0 · [Bajar ZIP para claude.ai](https://github.com/DevAI-MX/nbl-skills/raw/main/descargas/higgsfield-expert.zip)
 
@@ -180,10 +228,16 @@ Un anuncio UGC vertical de principio a fin: brief, guion, voz, persona, lip-sync
 claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install ugc-ad-pipeline@nbl-skills
 ```
 
-En un chat de Claude Code: «Instala la skill `ugc-ad-pipeline` del marketplace `DevAI-MX/nbl-skills` de GitHub (claude plugin marketplace add y claude plugin install).»
+O pégale esto a Claude Code:
+
+```
+Instala la skill `ugc-ad-pipeline` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install ugc-ad-pipeline@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
 
 Versión 1.1.0 · [Bajar ZIP para claude.ai](https://github.com/DevAI-MX/nbl-skills/raw/main/descargas/ugc-ad-pipeline.zip)
 
 ---
+
+Hay una página lista por skill en [`paginas/`](paginas/) (la usamos en Skool).
 
 Este repo se genera solo desde el baúl privado de Devia; los cambios aquí se pierden en la siguiente publicación.
