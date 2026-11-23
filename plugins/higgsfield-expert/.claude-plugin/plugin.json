@@ -1,0 +1,8 @@
+{
+  "name": "higgsfield-expert",
+  "version": "2.0.0",
+  "description": "Úsala cuando se trabaje con Higgsfield o generación de imagen/video con IA — elegir entre modelos (Soul, Nano Banana, Flux, GPT Image, Seedream, Kling, Veo, Wan, Hailuo, Recraft), lip-sync o avatares parlantes, JSON prompting, presets de…",
+  "author": {
+    "name": "Eduardo Solórzano"
+  }
+}

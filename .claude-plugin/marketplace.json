@@ -1,0 +1,261 @@
+{
+  "name": "nbl-skills",
+  "owner": {
+    "name": "Nomad Business Lab"
+  },
+  "metadata": {
+    "description": "Skills de Claude para la comunidad de Nomad Business Lab. Cada una se instala por separado."
+  },
+  "plugins": [
+    {
+      "name": "elevenlabs-expert",
+      "description": "Voz con IA en ElevenLabs que suena humana: qué modelo, voz y ajustes usar en español mexicano, cómo clonar tu voz y qué plan necesitas para anuncios.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Nomad Business Lab"
+      },
+      "category": "Video y anuncios con IA",
+      "source": "./plugins/elevenlabs-expert"
+    },
+    {
+      "name": "higgsfield-expert",
+      "description": "Imagen y video con IA en Higgsfield: qué modelo elegir, cómo escribir el prompt, cómo hacer avatares que hablan con tu voz y cómo no quemar créditos.",
+      "version": "2.0.0",
+      "author": {
+        "name": "Nomad Business Lab"
+      },
+      "category": "Video y anuncios con IA",
+      "source": "./plugins/higgsfield-expert"
+    },
+    {
+      "name": "ugc-ad-pipeline",
+      "description": "Un anuncio UGC vertical de principio a fin: brief, guion, voz, persona, lip-sync, edición y entrega, usando ElevenLabs y Higgsfield.",
+      "version": "1.1.0",
+      "author": {
+        "name": "Nomad Business Lab"
+      },
+      "category": "Video y anuncios con IA",
+      "source": "./plugins/ugc-ad-pipeline"
+    },
+    {
+      "name": "gsap-skills",
+      "description": "Las 8 skills oficiales de GSAP: tweens, timelines, ScrollTrigger, plugins, React/Vue/Svelte, utilidades y rendimiento de animaciones.",
+      "author": {
+        "name": "GreenSock (oficiales)"
+      },
+      "homepage": "https://github.com/greensock/gsap-skills",
+      "license": "MIT",
+      "category": "Diseño web y frontend",
+      "keywords": [
+        "terceros",
+        "publico"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/greensock/gsap-skills.git",
+        "path": "skills"
+      },
+      "skills": [
+        "./"
+      ]
+    },
+    {
+      "name": "impeccable",
+      "description": "Diseña, critica, audita y pule interfaces (web, dashboards, móvil): jerarquía, tipografía, color, movimiento y accesibilidad.",
+      "author": {
+        "name": "Paul Bakaus"
+      },
+      "homepage": "https://github.com/pbakaus/impeccable",
+      "license": "Apache-2.0",
+      "category": "Diseño web y frontend",
+      "keywords": [
+        "terceros",
+        "publico"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/pbakaus/impeccable.git",
+        "path": "plugin/skills/impeccable"
+      },
+      "skills": [
+        "./"
+      ]
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "description": "Datos buscables de UI/UX: estilos, paletas, tipografías, patrones y reglas por stack para diseñar o revisar interfaces.",
+      "author": {
+        "name": "Next Level Builder"
+      },
+      "homepage": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "license": "MIT",
+      "category": "Diseño web y frontend",
+      "keywords": [
+        "terceros",
+        "publico"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
+        "path": ".claude/skills/ui-ux-pro-max"
+      },
+      "skills": [
+        "./"
+      ]
+    },
+    {
+      "name": "design-taste-frontend",
+      "description": "Dirección de arte para landings y sitios públicos que no se vean hechos por IA: direcciones de diseño, reglas estrictas y revisión en navegador.",
+      "author": {
+        "name": "Leonxlnx (tasteskill)"
+      },
+      "homepage": "https://github.com/Leonxlnx/taste-skill",
+      "license": "MIT",
+      "category": "Diseño web y frontend",
+      "keywords": [
+        "terceros",
+        "publico"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Leonxlnx/taste-skill.git",
+        "path": "skills/taste-skill"
+      },
+      "skills": [
+        "./"
+      ]
+    },
+    {
+      "name": "web-design-guidelines",
+      "description": "Revisa el código de una interfaz contra las Web Interface Guidelines de Vercel: accesibilidad, UX y buenas prácticas.",
+      "author": {
+        "name": "Vercel"
+      },
+      "homepage": "https://github.com/vercel-labs/agent-skills",
+      "license": "MIT",
+      "category": "Diseño web y frontend",
+      "keywords": [
+        "terceros",
+        "publico"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/vercel-labs/agent-skills.git",
+        "path": "skills/web-design-guidelines"
+      },
+      "skills": [
+        "./"
+      ]
+    },
+    {
+      "name": "building-components",
+      "description": "Guía para construir componentes de interfaz accesibles y componibles: APIs, design tokens, publicación y documentación.",
+      "author": {
+        "name": "Vercel (components.build)"
+      },
+      "homepage": "https://github.com/vercel/components.build",
+      "license": "Apache-2.0",
+      "category": "Diseño web y frontend",
+      "keywords": [
+        "terceros",
+        "publico"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/vercel/components.build.git",
+        "path": "skills/building-components"
+      },
+      "skills": [
+        "./"
+      ]
+    },
+    {
+      "name": "shadcn-ui",
+      "description": "Referencia de shadcn/ui para React y Tailwind: componentes accesibles que se copian al proyecto.",
+      "author": {
+        "name": "bobmatnyc (Claude MPM)"
+      },
+      "homepage": "https://github.com/bobmatnyc/claude-mpm-skills",
+      "license": "MIT",
+      "category": "Diseño web y frontend",
+      "keywords": [
+        "terceros",
+        "publico"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/bobmatnyc/claude-mpm-skills.git",
+        "path": "toolchains/ui/components/shadcn"
+      },
+      "skills": [
+        "./"
+      ]
+    },
+    {
+      "name": "seo-audit",
+      "description": "Audita el SEO técnico y on-page de un sitio: indexación, meta tags, Core Web Vitals y caídas de tráfico.",
+      "author": {
+        "name": "Corey Haines"
+      },
+      "homepage": "https://github.com/coreyhaines31/marketingskills",
+      "license": "MIT",
+      "category": "Marketing",
+      "keywords": [
+        "terceros",
+        "publico"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/coreyhaines31/marketingskills.git",
+        "path": "skills/seo-audit"
+      },
+      "skills": [
+        "./"
+      ]
+    },
+    {
+      "name": "deep-research",
+      "description": "Investiga en la web en varias pasadas y desde varios ángulos antes de escribir, en vez de quedarse con una sola búsqueda.",
+      "author": {
+        "name": "ByteDance (DeerFlow)"
+      },
+      "homepage": "https://github.com/bytedance/deer-flow",
+      "license": "MIT",
+      "category": "Investigación",
+      "keywords": [
+        "terceros",
+        "publico"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/bytedance/deer-flow.git",
+        "path": "skills/public/deep-research"
+      },
+      "skills": [
+        "./"
+      ]
+    },
+    {
+      "name": "n8n-mcp-skills",
+      "description": "15 skills para armar workflows de n8n con n8n-mcp: expresiones, nodos, código JS/Python, validación, errores, subworkflows y agentes.",
+      "author": {
+        "name": "Romuald Członkowski (czlonkowski)"
+      },
+      "homepage": "https://github.com/czlonkowski/n8n-skills",
+      "license": "MIT",
+      "category": "Automatización con n8n",
+      "keywords": [
+        "terceros",
+        "publico"
+      ],
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/czlonkowski/n8n-skills.git",
+        "path": "skills"
+      },
+      "skills": [
+        "./"
+      ]
+    }
+  ]
+}

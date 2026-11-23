@@ -1,0 +1,8 @@
+{
+  "name": "elevenlabs-expert",
+  "version": "1.1.0",
+  "description": "Úsala cuando se genere voz, locución, voiceover o TTS con IA; se elija una voz; se ajusten settings de voz (stability, similarity, style, speed); se clone una voz; se use Voice Changer o Dubbing; se necesite voz en español mexicano o…",
+  "author": {
+    "name": "Eduardo Solórzano"
+  }
+}
