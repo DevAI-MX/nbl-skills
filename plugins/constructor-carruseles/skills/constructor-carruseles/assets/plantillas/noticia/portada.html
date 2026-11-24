@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{{FUENTES_URL}}" rel="stylesheet">
+<style>
+/*==BASE==*/
+/*==MARCA==*/
+/* Estilo «último momento»: noticia oscura. TINTE (el color de arriba del degradado) y el acento salen de la
+   herramienta o marca de la que habla la noticia; un solo acento por carrusel. */
+.slide{--tinte:{{TINTE}};color:#F5F5F7;background:radial-gradient(rgba(255,255,255,0.06) 2px,transparent 2px) 0 0/24px 24px,
+  linear-gradient(180deg,var(--tinte) 0%,#0B0B10 72%);text-align:center;}
+.acento-txt{color:var(--acento);}
+.pastilla{align-self:center;background:#E5322D;color:#FFFFFF;font-weight:800;font-size:26px;letter-spacing:0.12em;text-transform:uppercase;
+  padding:12px 28px;border-radius:999px;}
+.titulo{font-family:var(--fuente-titulo);font-weight:700;font-size:72px;line-height:1.08;letter-spacing:-0.03em;}
+.texto{font-size:38px;line-height:1.35;color:#C9C9D1;}
+.centro{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:44px;}
+.vidrio{align-self:center;max-width:904px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:24px;padding:18px;}
+.vidrio img{display:block;max-width:866px;max-height:560px;border-radius:12px;}
+.caja{align-self:center;border:3px solid var(--acento);border-radius:24px;padding:28px 56px;}
+.caja small{display:block;font-weight:700;font-size:30px;color:#C9C9D1;}
+.caja b{display:block;font-family:var(--fuente-titulo);font-weight:800;font-size:130px;line-height:1;color:var(--acento);margin-top:6px;}
+.handle{color:#C9C9D1;}
+.slide{background:#0B0B10;}
+.foto{position:absolute;inset:0;background-size:cover;background-position:center top;}
+.velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,16,0) 0%,rgba(11,11,16,0.10) 40%,rgba(11,11,16,0.92) 70%,#0B0B10 100%);}
+.capa{position:relative;z-index:1;margin-top:auto;display:flex;flex-direction:column;align-items:center;gap:36px;}
+.barra{display:flex;justify-content:center;}
+.titular{font-family:var(--fuente-titulo);font-weight:800;font-size:80px;line-height:1.04;letter-spacing:-0.03em;text-align:center;}
+.credito{position:absolute;z-index:1;top:var(--margen);right:var(--margen);font-size:20px;color:rgba(255,255,255,0.75);}
+.pie{position:relative;z-index:1;margin-top:40px;}
+</style>
+</head>
+<body>
+<!-- Portada «último momento»: foto a sangre que se funde a negro en la mitad de abajo, píldora roja centrada y titular
+     centrado en frase normal (no en mayúsculas), con la frase clave en el acento. Solo para noticias reales, recientes y con
+     fuente. Bloque opcional CREDITO: crédito de la foto cuando es de una persona real con licencia. -->
+<div class="slide">
+  <div class="foto" style="background-image:url('{{IMAGEN}}')"></div>
+  <div class="velo"></div>
+  <!--?CREDITO--><span class="credito">{{CREDITO}}</span><!--/?CREDITO-->
+  <div class="capa">
+    <div class="barra"><span class="pastilla">{{ETIQUETA_URGENTE}}</span></div>
+    <h1 class="titular">{{GANCHO}}</h1>
+  </div>
+  <div class="pie"><span class="handle">{{HANDLE}}</span><span></span></div>
+</div>
+</body>
+</html>

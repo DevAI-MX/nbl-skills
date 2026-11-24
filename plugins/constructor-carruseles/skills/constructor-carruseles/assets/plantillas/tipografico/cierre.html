@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{{FUENTES_URL}}" rel="stylesheet">
+<style>
+/*==BASE==*/
+/*==MARCA==*/
+.slide{background:var(--claro);color:var(--tinta);}
+.centro{flex:1;display:flex;flex-direction:column;justify-content:center;gap:44px;}
+.titulo{font-family:var(--fuente-titulo);font-weight:800;font-size:76px;line-height:1.05;letter-spacing:-0.02em;}
+.caja{background:var(--acento);color:var(--sobre-acento);border-radius:28px;padding:44px 52px;}
+.caja small{display:block;font-weight:700;font-size:28px;letter-spacing:0.12em;text-transform:uppercase;opacity:0.85;}
+.caja b{display:block;font-family:var(--fuente-titulo);font-weight:900;font-size:150px;line-height:1;letter-spacing:-0.03em;margin-top:8px;}
+.recibe{font-size:36px;line-height:1.45;opacity:0.85;}
+</style>
+</head>
+<body>
+<!-- Bloque RECURSO: en el cierre con regalo va siempre (enseña el recurso). Solo se quita en el cierre de guardar y seguir. -->
+<div class="slide">
+  <div class="centro">
+    <h2 class="titulo">{{TITULO}}</h2>
+    <!--?RECURSO--><div class="recurso"><div class="rayas"></div><div class="hoja" style="background-image:url('{{RECURSO_IMG}}')"></div><div class="titulo-recurso">{{RECURSO_TITULO}}</div><span class="sello">{{RECURSO_SELLO}}</span></div><!--/?RECURSO-->
+    <div class="caja"><small>{{ACCION}}</small><b>{{PALABRA}}</b></div>
+    <p class="recibe">{{QUE_RECIBE}}</p>
+  </div>
+  <div class="pie"><span class="handle">{{HANDLE}}</span><span></span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* base.css: estructura común de todos los formatos.
+   Los colores y las fuentes NO se tocan aquí: salen de marca/marca.css,
+   que se pega DESPUÉS de este archivo y sobreescribe estas variables. */
+:root{
+  --fondo:#111111;        /* fondo oscuro principal */
+  --fondo-2:#1C1C1C;      /* segundo fondo oscuro, para variar slides */
+  --claro:#F3F0EA;        /* fondo claro */
+  --texto:#FFFFFF;        /* texto sobre fondo oscuro */
+  --tinta:#141414;        /* texto sobre fondo claro */
+  --acento:#FF5A1F;       /* un solo color de acento */
+  --sobre-acento:#FFFFFF; /* texto encima del acento */
+  --fuente-titulo:'Inter',sans-serif;
+  --fuente-acento:'Instrument Serif',serif;  /* segunda fuente del título, para una palabra */
+  --fuente-texto:'Inter',sans-serif;
+  --margen:88px;          /* margen igual en los cuatro lados; nunca se reduce */
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1080px;height:1350px;overflow:hidden;}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;padding:var(--margen);
+  display:flex;flex-direction:column;font-family:var(--fuente-texto);}
+.acento-txt{color:var(--acento);}
+.serif{font-family:var(--fuente-acento);font-style:italic;font-weight:400;letter-spacing:0;}
+.handle{font-family:var(--fuente-texto);font-weight:600;font-size:26px;letter-spacing:0.02em;}
+.desliza{display:inline-flex;align-items:center;gap:12px;font-family:var(--fuente-texto);font-weight:700;font-size:26px;letter-spacing:0.04em;}
+.desliza svg{width:34px;height:24px;}
+.pie{margin-top:auto;display:flex;justify-content:space-between;align-items:center;}
+.foto{background:linear-gradient(135deg,#3a3a3a,#1a1a1a);background-size:cover;background-position:center;}
+/* Cierre que enseña el recurso: la hoja borrosa con solo el título legible y un sello. Se desvanece abajo
+   para no tapar el texto. RECURSO_IMG = portada del recurso (si aún no existe, quedan los renglones borrosos). */
+.recurso{position:relative;align-self:center;flex:none;width:620px;height:380px;border-radius:16px;overflow:hidden;
+  background:#FFFFFF;color:#141414;transform:rotate(-2deg);box-shadow:0 22px 40px rgba(0,0,0,0.30),0 4px 10px rgba(0,0,0,0.18);
+  -webkit-mask-image:linear-gradient(#000 55%,transparent 100%);mask-image:linear-gradient(#000 55%,transparent 100%);}
+.recurso .rayas{position:absolute;inset:110px 40px 0;filter:blur(5px);
+  background:repeating-linear-gradient(180deg,rgba(20,20,20,0.22) 0 12px,transparent 12px 34px);}
+.recurso .hoja{position:absolute;inset:0;background-size:cover;background-position:top center;filter:blur(9px);transform:scale(1.1);}
+.recurso .titulo-recurso{position:relative;z-index:1;padding:34px 130px 0 40px;font-family:var(--fuente-titulo);font-weight:900;
+  font-size:36px;line-height:1.08;text-transform:uppercase;text-align:left;}
+.recurso .sello{position:absolute;z-index:1;right:28px;top:28px;background:var(--acento);color:var(--sobre-acento);
+  font-family:var(--fuente-texto);font-weight:900;font-size:24px;letter-spacing:0.08em;padding:8px 16px;border-radius:8px;}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{{FUENTES_URL}}" rel="stylesheet">
+<style>
+/*==BASE==*/
+/*==MARCA==*/
+/* Estilo «último momento»: noticia oscura. TINTE (el color de arriba del degradado) y el acento salen de la
+   herramienta o marca de la que habla la noticia; un solo acento por carrusel. */
+.slide{--tinte:{{TINTE}};color:#F5F5F7;background:radial-gradient(rgba(255,255,255,0.06) 2px,transparent 2px) 0 0/24px 24px,
+  linear-gradient(180deg,var(--tinte) 0%,#0B0B10 72%);text-align:center;}
+.acento-txt{color:var(--acento);}
+.pastilla{align-self:center;background:#E5322D;color:#FFFFFF;font-weight:800;font-size:26px;letter-spacing:0.12em;text-transform:uppercase;
+  padding:12px 28px;border-radius:999px;}
+.titulo{font-family:var(--fuente-titulo);font-weight:700;font-size:72px;line-height:1.08;letter-spacing:-0.03em;}
+.texto{font-size:38px;line-height:1.35;color:#C9C9D1;}
+.centro{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:44px;}
+.vidrio{align-self:center;max-width:904px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:24px;padding:18px;}
+.vidrio img{display:block;max-width:866px;max-height:560px;border-radius:12px;}
+.caja{align-self:center;border:3px solid var(--acento);border-radius:24px;padding:28px 56px;}
+.caja small{display:block;font-weight:700;font-size:30px;color:#C9C9D1;}
+.caja b{display:block;font-family:var(--fuente-titulo);font-weight:800;font-size:130px;line-height:1;color:var(--acento);margin-top:6px;}
+.handle{color:#C9C9D1;}
+</style>
+</head>
+<body>
+<!-- Molde interior: titular centrado, la prueba en una tarjeta de vidrio (captura REAL) y un remate de una línea.
+     Bloques opcionales: PASTILLA (para la lámina de dato clave o resultado), CAPTURA y TEXTO. -->
+<div class="slide">
+  <div class="centro">
+    <!--?PASTILLA--><span class="pastilla">{{PASTILLA}}</span><!--/?PASTILLA-->
+    <h2 class="titulo">{{TITULO}}</h2>
+    <!--?CAPTURA--><div class="vidrio"><img src="{{CAPTURA}}" alt=""></div><!--/?CAPTURA-->
+    <!--?TEXTO--><p class="texto">{{TEXTO}}</p><!--/?TEXTO-->
+  </div>
+  <div class="pie"><span class="handle">{{HANDLE}}</span><span></span></div>
+</div>
+</body>
+</html>

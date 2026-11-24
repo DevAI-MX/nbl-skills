@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Editor de portada</title>
+<!-- Cópialo a la carpeta del carrusel y ábrelo en el navegador. La persona elige su foto, la arrastra, ajusta
+     zoom, tamaño del texto y altura del bloque, y copia los ajustes. Los valores se hornean tal cual en la
+     portada: <img id="foto"> con transform: translate(Xpx, Ypx) scale(Z), font-size y bottom del bloque. -->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #17181C; color: #E7E7EA; font-family: system-ui, -apple-system, sans-serif; padding: 28px;
+    display: flex; gap: 34px; align-items: flex-start; flex-wrap: wrap; }
+  .marco { width: 561px; height: 702px; flex-shrink: 0; border-radius: 8px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .escenario { width: 1080px; height: 1350px; position: relative; overflow: hidden; background: #0A0A0A;
+    transform: scale(0.5194); transform-origin: top left; cursor: grab; }
+  .escenario.arrastrando { cursor: grabbing; }
+  #foto { position: absolute; inset: 0; width: 1080px; height: 1350px; object-fit: cover; transform-origin: center center;
+    user-select: none; -webkit-user-drag: none; }
+  .velo { position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(0,0,0,0.62) 100%); }
+  .bloque { position: absolute; left: 88px; right: 88px; z-index: 2; text-align: center; color: #FFFFFF;
+    font-weight: 800; line-height: 1.02; letter-spacing: -0.02em; text-shadow: 0 4px 26px rgba(0,0,0,0.9); outline: none; }
+  .panel { flex: 1; min-width: 320px; max-width: 460px; }
+  h1 { font-size: 22px; margin-bottom: 6px; }
+  .ayuda { font-size: 14px; color: #9A9AA2; margin-bottom: 22px; line-height: 1.5; }
+  .control { margin-bottom: 20px; }
+  .control label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+  input[type=range] { width: 100%; height: 26px; }
+  input[type=file] { margin-bottom: 20px; color: #CFCFD6; }
+  .botones { display: flex; gap: 12px; flex-wrap: wrap; }
+  button { background: #2A2B31; color: #E7E7EA; border: 1px solid #3A3B42; padding: 12px 18px; border-radius: 10px;
+    font-size: 15px; font-weight: 700; cursor: pointer; }
+  button:hover { filter: brightness(1.15); }
+  pre { margin-top: 18px; background: #101115; border: 1px solid #2A2B31; border-radius: 10px; padding: 14px; font-size: 13px; color: #9FD39F; }
+</style>
+</head>
+<body>
+  <div class="marco">
+    <div class="escenario" id="escenario">
+      <img id="foto" alt="">
+      <div class="velo"></div>
+      <div class="bloque" id="bloque" contenteditable="true">Escribe aquí tu gancho</div>
+    </div>
+  </div>
+  <div class="panel">
+    <h1>Editor de portada</h1>
+    <p class="ayuda">Elige la foto, arrástrala para encuadrarla y mueve los controles. El texto se puede editar
+      dando clic. Con desplazamientos grandes usa un zoom de 1.10 a 1.20 para que no salgan barras negras.
+      Cuando quede, pulsa <b>Copiar ajustes</b> y pégalos en el chat.</p>
+    <input type="file" id="archivo" accept="image/*">
+    <div class="control"><label>Zoom de la foto <span id="v-zoom"></span></label><input type="range" id="zoom" min="1" max="2.6" step="0.01"></div>
+    <div class="control"><label>Tamaño del texto <span id="v-letra"></span></label><input type="range" id="letra" min="40" max="140" step="1"></div>
+    <div class="control"><label>Altura del bloque <span id="v-abajo"></span></label><input type="range" id="abajo" min="40" max="900" step="2"></div>
+    <div class="botones">
+      <button id="copiar">Copiar ajustes</button>
+      <button id="descargar">Descargar ajustes (.json)</button>
+      <button id="reiniciar">Reiniciar</button>
+    </div>
+    <pre id="salida"></pre>
+  </div>
+<script>
+  var ESCALA = 0.5194;
+  var INICIAL = { x: 0, y: 0, zoom: 1.12, font: 92, bottom: 104 };
+  var estado = Object.assign({}, INICIAL);
+  var $ = function (id) { return document.getElementById(id); };
+
+  function ajustes() {
+    return { x: Math.round(estado.x), y: Math.round(estado.y), zoom: +estado.zoom.toFixed(3), font: estado.font, bottom: estado.bottom };
+  }
+  function pintar() {
+    $('foto').style.transform = 'translate(' + estado.x + 'px,' + estado.y + 'px) scale(' + estado.zoom + ')';
+    $('bloque').style.fontSize = estado.font + 'px';
+    $('bloque').style.bottom = estado.bottom + 'px';
+    $('zoom').value = estado.zoom; $('letra').value = estado.font; $('abajo').value = estado.bottom;
+    $('v-zoom').textContent = estado.zoom.toFixed(2) + 'x';
+    $('v-letra').textContent = estado.font + ' px';
+    $('v-abajo').textContent = estado.bottom + ' px';
+    $('salida').textContent = JSON.stringify(ajustes(), null, 2);
+  }
+
+  var arrastre = null;
+  $('escenario').addEventListener('mousedown', function (e) {
+    if (e.target === $('bloque')) return;
+    arrastre = { x: e.clientX, y: e.clientY, ox: estado.x, oy: estado.y };
+    $('escenario').classList.add('arrastrando');
+  });
+  window.addEventListener('mousemove', function (e) {
+    if (!arrastre) return;
+    estado.x = arrastre.ox + (e.clientX - arrastre.x) / ESCALA;
+    estado.y = arrastre.oy + (e.clientY - arrastre.y) / ESCALA;
+    pintar();
+  });
+  window.addEventListener('mouseup', function () { arrastre = null; $('escenario').classList.remove('arrastrando'); });
+
+  $('zoom').addEventListener('input', function (e) { estado.zoom = +e.target.value; pintar(); });
+  $('letra').addEventListener('input', function (e) { estado.font = +e.target.value; pintar(); });
+  $('abajo').addEventListener('input', function (e) { estado.bottom = +e.target.value; pintar(); });
+  $('archivo').addEventListener('change', function (e) {
+    var f = e.target.files[0];
+    if (f) $('foto').src = URL.createObjectURL(f);
+  });
+  $('copiar').addEventListener('click', function () {
+    var texto = $('salida').textContent;
+    if (navigator.clipboard) navigator.clipboard.writeText(texto).catch(function () { window.prompt('Copia estos ajustes:', texto); });
+    else window.prompt('Copia estos ajustes:', texto);
+  });
+  $('descargar').addEventListener('click', function () {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([$('salida').textContent], { type: 'application/json' }));
+    a.download = 'portada-ajustes.json';
+    a.click();
+  });
+  $('reiniciar').addEventListener('click', function () { estado = Object.assign({}, INICIAL); pintar(); });
+  pintar();
+</script>
+</body>
+</html>

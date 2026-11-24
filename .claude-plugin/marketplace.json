@@ -8,6 +8,26 @@
   },
   "plugins": [
     {
+      "name": "constructor-carruseles",
+      "description": "Arma carruseles de Instagram listos para subir en 6 formatos, rehace en tu marca un carrusel viral que te gustó y te da los prompts para generar las imágenes en ChatGPT.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Nomad Business Lab"
+      },
+      "category": "Marketing",
+      "source": "./plugins/constructor-carruseles"
+    },
+    {
+      "name": "editor-dopaminico",
+      "description": "Edita reels y shorts para retener: cortes en el silencio real, subtítulos exactos, música y efectos medidos en dB y LUFS, y una lista de QA con comandos antes de publicar.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Nomad Business Lab"
+      },
+      "category": "Video y anuncios con IA",
+      "source": "./plugins/editor-dopaminico"
+    },
+    {
       "name": "elevenlabs-expert",
       "description": "Voz con IA en ElevenLabs que suena humana: qué modelo, voz y ajustes usar en español mexicano, cómo clonar tu voz y qué plan necesitas para anuncios.",
       "version": "1.1.0",
@@ -26,6 +46,26 @@
       },
       "category": "Video y anuncios con IA",
       "source": "./plugins/higgsfield-expert"
+    },
+    {
+      "name": "investigador-contenido",
+      "description": "Investiga con datos reales qué funciona en Instagram y en la Biblioteca de anuncios de Meta: virales, cuentas, competencia, comentarios y anuncios, sin inventar un solo número.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Nomad Business Lab"
+      },
+      "category": "Investigación",
+      "source": "./plugins/investigador-contenido"
+    },
+    {
+      "name": "optimizador-bio-ig",
+      "description": "Revisa tu perfil de Instagram como página de ventas, califica los 6 elementos que deciden si te escriben y te reescribe la bio lista para pegar, sin seguidores como prueba ni promesas infladas.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Nomad Business Lab"
+      },
+      "category": "Marketing",
+      "source": "./plugins/optimizador-bio-ig"
     },
     {
       "name": "ugc-ad-pipeline",

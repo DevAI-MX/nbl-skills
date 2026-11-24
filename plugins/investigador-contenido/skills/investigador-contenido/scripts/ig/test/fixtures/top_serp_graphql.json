@@ -1,0 +1,9 @@
+{"data": {"xdt_fbsearch__top_serp_graphql": {"edges": [
+ {"node": {"__typename": "XDTTopSerpHeaderUnit"}, "cursor": null},
+ {"node": {"__typename": "XDTTopSerpAccountsHCMUnit"}, "cursor": null},
+ {"node": {"__typename": "XDTTopSerpMediaGridUnit", "items": [
+  {"__typename": "XDTMediaDict", "pk": "3849163405277545456", "code": "DVq-bkuAEPw", "media_type": 2, "user": {"pk": "56413349678", "username": "cuenta_ejemplo_uno", "is_verified": true}, "taken_at": 1773076187, "like_count": 15808, "comment_count": 154, "view_count": null, "caption": {"text": "Los 5 tipos de contenido que deberías publicar\n\nSígueme para más"}, "image_versions2": {"candidates": [{"height": 1136, "width": 640, "url": "https://example.invalid/portada-uno.jpg"}]}, "_nota": "datos inventados con la forma real de la respuesta vault:inventado"},
+  {"__typename": "XDTMediaDict", "pk": "3493297344699619415", "code": "DB6r209othX", "media_type": 2, "user": {"pk": "57412205138", "username": "cuenta_ejemplo_dos", "is_verified": true}, "taken_at": 1730653613, "like_count": 49402, "comment_count": 566, "view_count": null, "caption": {"text": "El tiempo vuela: trabaja con cabeza"}, "image_versions2": {"candidates": [{"height": 1920, "width": 1080, "url": "https://example.invalid/portada-dos.jpg"}]}, "_nota": "vault:inventado"},
+  {"__typename": "XDTMediaDict", "pk": "1", "media_type": 1, "_nota": "sin code: se ignora"}
+ ]}, "cursor": null}
+]}}}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{{FUENTES_URL}}" rel="stylesheet">
+<style>
+/*==BASE==*/
+/*==MARCA==*/
+.slide{background:#FFFFFF;color:#0F1419;justify-content:center;}
+.slide.noche{background:#000000;color:#E7E9EA;}
+.perfil{display:flex;align-items:center;gap:24px;}
+.avatar{width:108px;height:108px;border-radius:50%;flex:none;background:var(--acento) center/cover;display:flex;align-items:center;justify-content:center;
+  color:var(--sobre-acento);font-weight:800;font-size:44px;}
+.nombre{display:flex;align-items:center;gap:10px;font-weight:800;font-size:38px;}
+.verif{width:36px;height:36px;}
+.arroba{font-size:30px;color:#536471;margin-top:4px;}
+.post{font-size:56px;line-height:1.32;font-weight:500;margin-top:56px;letter-spacing:-0.01em;}
+.post .marca{text-transform:uppercase;}
+.imagen{margin-top:48px;height:520px;border-radius:32px;}
+.slide.noche .arroba{color:#71767B;}
+</style>
+</head>
+<body>
+<!-- Clase "slide noche" para la versión en negro. {{VERIFICADO}} = el svg .verif o vacío. -->
+<div class="slide">
+  <div class="perfil">
+    <div class="avatar" style="background-image:url('{{FOTO}}')">{{INICIAL}}</div>
+    <div><div class="nombre">{{NOMBRE}}{{VERIFICADO}}</div><div class="arroba">{{HANDLE}}</div></div>
+  </div>
+  <p class="post">{{GANCHO}}</p>
+</div>
+</body>
+</html>

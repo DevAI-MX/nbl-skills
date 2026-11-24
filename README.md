@@ -15,7 +15,7 @@ O, dentro de un chat de Claude Code, pega la frase que trae cada skill y Claude 
 **¿Las quieres todas?**
 
 ```bash
-claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install elevenlabs-expert@nbl-skills; claude plugin install higgsfield-expert@nbl-skills; claude plugin install ugc-ad-pipeline@nbl-skills; claude plugin install gsap-skills@nbl-skills; claude plugin install impeccable@nbl-skills; claude plugin install ui-ux-pro-max@nbl-skills; claude plugin install design-taste-frontend@nbl-skills; claude plugin install web-design-guidelines@nbl-skills; claude plugin install building-components@nbl-skills; claude plugin install shadcn-ui@nbl-skills; claude plugin install seo-audit@nbl-skills; claude plugin install deep-research@nbl-skills; claude plugin install n8n-mcp-skills@nbl-skills
+claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install constructor-carruseles@nbl-skills; claude plugin install editor-dopaminico@nbl-skills; claude plugin install elevenlabs-expert@nbl-skills; claude plugin install higgsfield-expert@nbl-skills; claude plugin install investigador-contenido@nbl-skills; claude plugin install optimizador-bio-ig@nbl-skills; claude plugin install ugc-ad-pipeline@nbl-skills; claude plugin install gsap-skills@nbl-skills; claude plugin install impeccable@nbl-skills; claude plugin install ui-ux-pro-max@nbl-skills; claude plugin install design-taste-frontend@nbl-skills; claude plugin install web-design-guidelines@nbl-skills; claude plugin install building-components@nbl-skills; claude plugin install shadcn-ui@nbl-skills; claude plugin install seo-audit@nbl-skills; claude plugin install deep-research@nbl-skills; claude plugin install n8n-mcp-skills@nbl-skills
 ```
 
 ## Automatización con n8n
@@ -152,6 +152,22 @@ Creada por [bobmatnyc (Claude MPM)](https://github.com/bobmatnyc/claude-mpm-skil
 
 ## Investigación
 
+### `investigador-contenido`
+
+Investiga con datos reales qué funciona en Instagram y en la Biblioteca de anuncios de Meta: virales, cuentas, competencia, comentarios y anuncios, sin inventar un solo número.
+
+```bash
+claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install investigador-contenido@nbl-skills
+```
+
+O pégale esto a Claude Code:
+
+```
+Instala la skill `investigador-contenido` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install investigador-contenido@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
+
+Versión 0.1.0 · [Bajar ZIP para claude.ai](https://github.com/DevAI-MX/nbl-skills/raw/main/descargas/investigador-contenido.zip)
+
 ### `deep-research`
 
 Investiga en la web en varias pasadas y desde varios ángulos antes de escribir, en vez de quedarse con una sola búsqueda.
@@ -170,6 +186,38 @@ Creada por [ByteDance (DeerFlow)](https://github.com/bytedance/deer-flow) · lic
 
 ## Marketing
 
+### `constructor-carruseles`
+
+Arma carruseles de Instagram listos para subir en 6 formatos, rehace en tu marca un carrusel viral que te gustó y te da los prompts para generar las imágenes en ChatGPT.
+
+```bash
+claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install constructor-carruseles@nbl-skills
+```
+
+O pégale esto a Claude Code:
+
+```
+Instala la skill `constructor-carruseles` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install constructor-carruseles@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
+
+Versión 0.1.0 · [Bajar ZIP para claude.ai](https://github.com/DevAI-MX/nbl-skills/raw/main/descargas/constructor-carruseles.zip)
+
+### `optimizador-bio-ig`
+
+Revisa tu perfil de Instagram como página de ventas, califica los 6 elementos que deciden si te escriben y te reescribe la bio lista para pegar, sin seguidores como prueba ni promesas infladas.
+
+```bash
+claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install optimizador-bio-ig@nbl-skills
+```
+
+O pégale esto a Claude Code:
+
+```
+Instala la skill `optimizador-bio-ig` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install optimizador-bio-ig@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
+
+Versión 0.1.0 · [Bajar ZIP para claude.ai](https://github.com/DevAI-MX/nbl-skills/raw/main/descargas/optimizador-bio-ig.zip)
+
 ### `seo-audit`
 
 Audita el SEO técnico y on-page de un sitio: indexación, meta tags, Core Web Vitals y caídas de tráfico.
@@ -187,6 +235,22 @@ Instala la skill `seo-audit` de Nomad Business Lab en mi Claude Code. Corre en l
 Creada por [Corey Haines](https://github.com/coreyhaines31/marketingskills) · licencia MIT · se instala desde el repo de su autor, así te llegan sus mejoras
 
 ## Video y anuncios con IA
+
+### `editor-dopaminico`
+
+Edita reels y shorts para retener: cortes en el silencio real, subtítulos exactos, música y efectos medidos en dB y LUFS, y una lista de QA con comandos antes de publicar.
+
+```bash
+claude plugin marketplace add DevAI-MX/nbl-skills; claude plugin install editor-dopaminico@nbl-skills
+```
+
+O pégale esto a Claude Code:
+
+```
+Instala la skill `editor-dopaminico` de Nomad Business Lab en mi Claude Code. Corre en la terminal `claude plugin marketplace add DevAI-MX/nbl-skills` (si ya está dado de alta, sigue) y luego `claude plugin install editor-dopaminico@nbl-skills`. Después prende la actualización automática del marketplace `nbl-skills` (en /plugin → Marketplaces) para que me lleguen las mejoras, y dime cuando quede lista.
+```
+
+Versión 0.1.0 · [Bajar ZIP para claude.ai](https://github.com/DevAI-MX/nbl-skills/raw/main/descargas/editor-dopaminico.zip)
 
 ### `elevenlabs-expert`
 

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="{{FUENTES_URL}}" rel="stylesheet">
+<style>
+/*==BASE==*/
+/*==MARCA==*/
+.slide{padding:0;color:#FFFFFF;}
+.mitad{position:relative;height:675px;overflow:hidden;}
+.mitad .foto{position:absolute;inset:0;}
+.mitad .velo{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.05) 30%,rgba(0,0,0,0.8) 100%);}
+.mitad .txt{position:absolute;left:var(--margen);right:var(--margen);bottom:56px;display:flex;flex-direction:column;gap:18px;}
+.mitad.arriba .txt{bottom:auto;top:var(--margen);}
+.mitad.arriba .velo{background:linear-gradient(0deg,rgba(0,0,0,0.05) 30%,rgba(0,0,0,0.8) 100%);}
+.rotulo{align-self:flex-start;font-weight:900;font-size:26px;letter-spacing:0.16em;text-transform:uppercase;padding:10px 20px;border-radius:999px;background:rgba(255,255,255,0.92);color:#111;}
+.mitad.abajo .rotulo{background:var(--acento);color:var(--sobre-acento);}
+.frase{font-family:var(--fuente-titulo);font-weight:800;font-size:60px;line-height:1.08;letter-spacing:-0.02em;}
+.costura{position:absolute;left:0;right:0;top:671px;height:8px;background:var(--acento);z-index:2;}
+.banda{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);z-index:3;background:var(--acento);color:var(--sobre-acento);
+  padding:40px var(--margen);font-family:var(--fuente-titulo);font-weight:900;font-size:72px;line-height:1.05;letter-spacing:-0.025em;text-align:center;}
+.marcas{position:absolute;left:var(--margen);right:var(--margen);bottom:40px;z-index:3;display:flex;justify-content:space-between;align-items:center;}
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="mitad arriba"><div class="foto" style="background-image:url('{{IMAGEN_ARRIBA}}')"></div><div class="velo"></div>
+    <div class="txt"><span class="rotulo">{{ROTULO_ARRIBA}}</span><p class="frase">{{FRASE_ARRIBA}}</p></div></div>
+  <div class="mitad abajo"><div class="foto" style="background-image:url('{{IMAGEN_ABAJO}}')"></div><div class="velo"></div>
+    <div class="txt"><span class="rotulo">{{ROTULO_ABAJO}}</span><p class="frase">{{FRASE_ABAJO}}</p></div></div>
+  <div class="costura"></div>
+</div>
+</body>
+</html>
